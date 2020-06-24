@@ -1,37 +1,97 @@
-/* =============================================================================
-   HTML5 CSS Reset Minified - Eric Meyer
-   ========================================================================== */
-
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
-body{line-height:1}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
-nav ul{list-style:none}
-blockquote,q{quotes:none}
-blockquote:before,blockquote:after,q:before,q:after{content:none}
-a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
-mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
-del{text-decoration:line-through}
-abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
-table{border-collapse:collapse;border-spacing:0}
-hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
-input,select{vertical-align:middle}
-li{list-style:none}
+/* ==========================================================================
+   HTML5 CSS Minimalist Design - AgilePlaya
+   ========================================================================== 
+*/
 
 
-/* =============================================================================
-   My CSS
-   ========================================================================== */
 
-/* ---- base ---- */
+/*    Initializing style     */
 
-html,body{ 
-	width:100%;
-	height:100%;
-	background:#111;
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, 
+address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, 
+b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, 
+thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, 
+hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  line-height:1
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display:block
+}
+
+blockquote, q {
+  quotes:none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content:none
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+  text-decoration:none
+}
+
+mark {
+  background-color:#ff9;
+  color:#000;
+  font-style:italic;
+  font-weight:bold
+}
+
+del {
+  text-decoration:line-through
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help
+}
+
+table {
+  border-collapse:collapse;border-spacing:0
+}
+
+hr {
+  display:block;
+  height:1px;
+  border:0;
+  border-top:1px solid #ccc;
+  margin:1em 0;
+  padding:0
+}
+
+input, select {
+  vertical-align:middle
+}
+
+li {
+  list-style:none
+}
+
+html, body{ 
+  width:100%;
+  height:100%;
+  background:#ffffff;
 }
 
 html{
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: 'Comfortaa', cursive;
 }
 
 body{
@@ -40,57 +100,246 @@ body{
 
 canvas{
   display:block;
-  vertical-align:bottom;
+  position: relative;
+  z-index: 1;
 }
 
 
-/* ---- stats.js ---- */
-
-.count-particles{
-  background: #000022;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 80px;
-  color: #13E8E9;
-  font-size: .8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-}
-
-.js-count-particles{
-  font-size: 1.1em;
-}
-
-#stats,
-.count-particles{
-  -webkit-user-select: none;
-  margin-top: 5px;
-  margin-left: 5px;
-}
-
-#stats{
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
-}
-
-.count-particles{
-  border-radius: 0 0 3px 3px;
-}
-
-
-/* ---- particles.js container ---- */
+/*    Particles Background Style     */
 
 #particles-js{
   width: 100%;
   height: 100%;
-  background-color: #b61924;
+  background-color: #dedede;
   background-image: url('');
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+}
+
+
+/*    Page Styling     */
+
+.wrapper {
+  display: block;
+  position: absolute;
+  padding: 5%;
+  top: 35%;
+  float: left;
+  left: 20%;
+  width: 50%;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+
+  -moz-transition: background-color 0.4s ease-in-out;
+  -webkit-transition: background-color 0.4s ease-in-out;
+  -ms-transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
+  backdrop-filter: blur(5px);
+  
+  background-color: rgba(255, 255, 255, 0.1);
+  border-width: 1px;
+  border-style: outset;
+  border-color: #696969;
+  border-radius: 0.5rem;
+  z-index: 10;
+}
+
+.wrapper:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.centre-text {
+  display:block;
+  position: relative;
+  color: rgb(100, 100, 100);
+}
+
+h1 {font-family: 'Comfortaa', cursive; font-style: cursive; font-weight: 600; line-height: 5rem; font-size: 3rem;}
+
+p {font-family: 'Quicksand', sans-serif; font-style: sans-serif; font-size: 1.5rem;}
+
+.text-shadow-light {
+  text-shadow: 2px 2px 4px #69696942;
+}
+
+a {
+  -moz-transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+  -webkit-transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+  -ms-transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+  border-bottom: dotted 1px;
+  border-bottom-color: #551A8B;
+  text-decoration: none;
+}
+
+a.text-glow {
+  text-shadow: 1px 1px 2px #a0a0a0;
+}
+
+a:hover {
+  border-bottom-color: transparent;
+  text-decoration: none;
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 1%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 10;
+}
+
+@media all and (orientation:landscape) {
+  .logo_iiitl {
+    position: relative;
+    float: left;
+    width: 7%;
+    height: 5%;
+    resize: both;
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .logo_quasar {
+    position: relative;
+    float: right;
+    width: 14%;
+    height: 5%;
+    resize: both;
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0);
+  } 
+
+}
+
+@media all and (orientation:portrait) {
+  .logo_iiitl {
+    position: relative;
+    float: left;
+    width: 14%;
+    height: 10%;
+    resize: both;
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .logo_quasar {
+    position: relative;
+    float: right;
+    width: 28%;
+    height: 10%;
+    resize: both;
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0);
+  } 
+
+}
+/*
+.logo_iiitl {
+position: relative;
+float: left;
+width: 7%;
+height: 5%;
+resize: both;
+padding: 1%;
+background-color: rgba(255, 255, 255, 0);
+}
+
+.logo_quasar {
+position: relative;
+float: right;
+width: 14%;
+height: 5%;
+resize: both;
+padding: 1%;
+background-color: rgba(255, 255, 255, 0);
+}
+*/
+.centre_logo {
+  position: absolute;
+  width: max-content;
+  left: 48%;
+  border-radius: 60px;
+  background-color: rgba(100, 100, 100, 0);
+  padding: 0px;
+}
+
+.mail_logo {
+  width: 60px;
+  height: 60px;
+  resize: both;
+  align-self: center;
+  color: gray;
+  z-index: 50;
+}
+
+.centre_logo:hover {
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+  cursor: pointer;
+  background-color: rgba(150, 150, 150, 0.25)
+} 
+
+a:hover {
+  cursor: pointer;
+}
+
+nav ul a, nav .brand-logo {
+  color: #444;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255, 255, 255, .9);
+}
+.parallax-container .section {
+  width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 2px #303030;
+}
+
+a.text-shadow {
+  text-shadow: 1px 1px 2px #4d4d4d;
+}
+
+.text-glow {
+  text-shadow: 1px 1px 2px #dfdfdf;
 }

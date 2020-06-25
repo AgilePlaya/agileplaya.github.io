@@ -120,14 +120,35 @@ canvas{
 
 /*    Page Styling     */
 
+@media screen and (orientation: portrait) {
+  .icon-block-text {
+    padding: 0.5rem 5rem 2rem 5rem;
+  }
+
+  .logo {
+    padding: 2rem 5rem 5.5rem 5rem;
+  }
+}
+
+
+@media screen and (orientation: landscape) {
+  .icon-block-text {
+    padding: 0.5rem 1rem 2rem 1rem;
+  }
+
+  .logo {
+    padding: 2rem 1rem 5.5rem 1rem;
+  }
+}
+
 .wrapper {
-  display: block;
-  position: absolute;
-  padding: 5%;
-  top: 35%;
-  float: left;
-  left: 20%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
   width: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5%;
+
   align-items: center;
   align-content: center;
   text-align: center;
@@ -140,7 +161,7 @@ canvas{
   
   background-color: rgba(200, 200, 200, 0.1);
   border-width: 1px;
-  border-style: outset;
+  border-style: solid;
   border-color: #696969;
   border-radius: 0.5rem;
   z-index: 10;
@@ -148,6 +169,14 @@ canvas{
 
 .wrapper:hover {
   background-color: rgba(200, 200, 200, 0.25);
+}
+
+.cards-box {
+  display: block;
+  position: relative;
+  margin: auto;
+  padding: auto;
+  align-content: center;
 }
 
 .centre-text {
@@ -186,7 +215,7 @@ a:hover {
   position: relative;
   float: left;
   padding: 1rem 0rem 0rem 0rem;
-  margin: 4rem 0rem 0rem 5rem;
+  margin: 5rem 0rem 0rem 5rem;
   margin-left: 5rem;
   margin-right: 0rem;
   border-radius: 1rem;
@@ -214,9 +243,11 @@ a:hover {
 
 .icon-block-text {
   z-index: 25;
+  width: 10rem;
   display: block;
   position: relative;
-  padding: 0.5rem 7rem 2rem 7rem;
+  /* padding: 0.5rem 2rem 2rem 2rem; */
+  /* padding: 0.5rem 7.5rem 2rem 7.5rem; For portrait view*/
 }
 
 
@@ -258,7 +289,8 @@ a:hover {
   display: block;
   position: absolute;
   top: 0;
-  padding: 2rem 5rem 5.5rem 5rem;
+  /* padding: 2rem 1rem 5.5rem 1rem; */
+  /* padding: 2rem 5rem 5.5rem 5rem;    For portrait view*/
   border-radius: 1rem;
   backdrop-filter: blur(0.25rem);
   background-color: rgba(255, 255, 255, 0);

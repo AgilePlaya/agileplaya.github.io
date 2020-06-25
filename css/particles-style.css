@@ -110,7 +110,7 @@ canvas{
 #particles-js{
   width: 100%;
   height: 100%;
-  background-color: #dedede;
+  background-color: #e5e5e5;
   background-image: url('');
   background-size: cover;
   background-position: 50% 50%;
@@ -136,9 +136,9 @@ canvas{
   -webkit-transition: background-color 0.4s ease-in-out;
   -ms-transition: background-color 0.4s ease-in-out;
   transition: background-color 0.4s ease-in-out;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(0.25rem);
   
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(200, 200, 200, 0.1);
   border-width: 1px;
   border-style: outset;
   border-color: #696969;
@@ -147,7 +147,7 @@ canvas{
 }
 
 .wrapper:hover {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(200, 200, 200, 0.25);
 }
 
 .centre-text {
@@ -164,7 +164,7 @@ p {font-family: 'Quicksand', sans-serif; font-style: sans-serif; font-size: 1.5r
   text-shadow: 2px 2px 4px #69696942;
 }
 
-a {
+a.text-glow {
   -moz-transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out;
   -webkit-transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out;
   -ms-transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out;
@@ -172,15 +172,104 @@ a {
   border-bottom: dotted 1px;
   border-bottom-color: #551A8B;
   text-decoration: none;
-}
-
-a.text-glow {
+  color: #551A8B;
   text-shadow: 1px 1px 2px #a0a0a0;
 }
 
 a:hover {
   border-bottom-color: transparent;
   text-decoration: none;
+}
+
+.icon-block {
+  display: block;
+  position: relative;
+  float: left;
+  padding: 1rem 0rem 0rem 0rem;
+  margin-left: 5rem;
+  margin-right: 0rem;
+  border-radius: 1rem;
+
+  font-size: 1.5rem;
+
+  text-shadow: 2px 2px 4px #69696942;
+  
+  background-color: rgba(255, 255, 255, 0.25);
+  
+  backdrop-filter: blur(5rem);
+  
+  box-shadow: -0.5rem 0.5rem 1rem rgb(145, 145, 145), 0.5rem -0.5rem 1rem white;
+
+  -moz-transition: background-color 0.4s ease-in-out, backdrop-filter 0.2s ease-in-out;
+  -webkit-transition: background-color 0.4s ease-in-out, backdrop-filter 0.2s ease-in-out;
+  -ms-transition: background-color 0.4s ease-in-out, backdrop-filter 0.2s ease-in-out;
+  transition: background-color 0.4s ease-in-out, backdrop-filter 0.2s ease-in-out;
+}
+
+.icon-block:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10rem);
+}
+
+.icon-block-text {
+  z-index: 25;
+  display: block;
+  position: relative;
+  padding: 0.5rem 2rem 2rem 2rem;
+}
+
+
+
+.icon {
+  z-index: 15;
+  padding: 1rem;
+
+  border-radius: 50%;
+  /* background-image: radial-gradient(rgba(98, 195, 255, 1) 55%, rgba(98, 195, 255, 0) 60%); */
+
+  transform-origin: center;
+  transform: scale(1);
+
+  /* -moz-transition: background-image 0.2s ease-in-out, transform 0.2s ease-in-out;
+  -webkit-transition: background-image 0.2s ease-in-out, transform 0.2s ease-in-out;
+  -ms-transition: background-image 0.2s ease-in-out, transform 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out, transform 0.2s ease-in-out; */
+  
+  -moz-transition: transform 0.2s ease-in-out;
+  -webkit-transition: transform 0.2s ease-in-out;
+  -ms-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+.icon:hover {
+  /* background-image: radial-gradient(rgba(98, 195, 255, 1) 50%, rgba(98, 195, 255, 0) 70%); */
+  transform: scale(0.95);
+}
+
+/* .win_logo {
+  resize: both;
+  width: 60%;
+  height: 60%;
+} */
+
+.logo {
+  z-index: 20;
+  display: block;
+  position: absolute;
+  top: 0;
+  padding: 2rem 1rem 5.5rem 1rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(0.25rem);
+  background-color: rgba(255, 255, 255, 0);
+
+  -moz-transition: backdrop-filter 0.2s ease-in-out;
+  -webkit-transition: backdrop-filter 0.2s ease-in-out;
+  -ms-transition: backdrop-filter 0.2s ease-in-out;
+  transition: backdrop-filter 0.2s ease-in-out;
+}
+
+.logo:hover {
+  backdrop-filter: blur(0.75rem);
 }
 
 
@@ -319,17 +408,6 @@ nav ul a, nav .brand-logo {
   #index-banner .section {
     top: 0;
   }
-}
-
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
-
-footer.page-footer {
-  margin: 0;
 }
 
 .text-shadow {

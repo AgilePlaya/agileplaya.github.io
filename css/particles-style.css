@@ -186,7 +186,7 @@ a:hover {
   position: relative;
   float: left;
   padding: 1rem 0rem 0rem 0rem;
-  margin: 4rem 0rem 4rem 5rem;
+  margin: 4rem 0rem 0rem 5rem;
   margin-left: 5rem;
   margin-right: 0rem;
   border-radius: 1rem;
@@ -258,7 +258,7 @@ a:hover {
   display: block;
   position: absolute;
   top: 0;
-  padding: 2rem 1rem 5.5rem 1rem;
+  padding: 2rem 5rem 5.5rem 5rem;
   border-radius: 1rem;
   backdrop-filter: blur(0.25rem);
   background-color: rgba(255, 255, 255, 0);

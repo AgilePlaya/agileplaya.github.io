@@ -12,7 +12,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Quicksand&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body data-lightMode="[light]">
+
+    <!--    Button for light-dark mode switch    -->
+    <svg style = display:none id = svg_definitions>
+        <defs>
+            <symbol viewBox="0 0 960 960" id="icon-mode-dark">
+                <circle cx="476" cy="480" r="458" fill-opacity=".25" />
+                <path d="M382 33C82 91-118 488 115 767c186 223 492 255 716 9a515 515 0 01-421-243c-94-157-56-368-28-500z" />
+            </symbol>
+            <symbol viewBox="0 0 960 960" id="icon-mode-light">
+                <circle cx="479.5" cy="480.5" r="242" />
+                <path d="M480 800c22 0 40 18 40 40v80a40 40 0 01-80 0v-80c0-22 18-40 40-40zm480-320c0 22-18 40-40 40h-80a40 
+                40 0 010-80h80c22 0 40 18 40 40zM706 763l57 56a40 40 0 1056-56l-56-57a40 40 0 10-57 57zm-509 56l57-56a40 40 
+                0 10-57-57l-56 57a40 40 0 1056 56zm-77-379a40 40 0 010 80H40a40 40 0 010-80h80zm21-243l56 57a40 40 0 1057-57l-57-56a40 
+                40 0 10-56 56zm622 57l56-57a40 40 0 10-56-56l-57 56a40 40 0 1057 57zM440 40v80a40 40 0 0080 0V40a40 40 0 00-80 0z" />
+            </symbol>
+        </defs>
+      </svg>
 
     <!--    Main body of the webpage    -->
     <section class="wrapper">
@@ -20,7 +37,7 @@
             <h1 class="text-shadow-light">Page still under development</h1>
             <p>Maybe you wanted to go <a class="text-glow" href="https://agileplaya.github.io/game-store">Game Store</a>?</p>
             <p>Buttons below under tesing.</p>
-
+            
             <section class="cards-box">
                 <section class="icon-block left">
                     <a href="#">
@@ -71,8 +88,87 @@
         <canvas class="particles-js-canvas-el" style="width:100%; height:90%;"></canvas>
     </div>
 
+    
+    <style id = action_button_animations>
+        /* Buttons (or links) */
+      
+        [class^="actions_btn"],
+        [class^="actions_btn"]:visited {
+      
+          /* button colors light */
+          --btn-fg: #4e1075ea;
+          --btn-bg: #d3d3e6ab;
+          --btn-fg-hover: #bb8be7ea;
+          --btn-bg-hover: #5c5858ab;
+      
+          box-sizing: content-box;
+          display: block;
+          width: 1.75rem;
+          height: 1.75rem;
+          padding: 0.25rem;
+
+          color: var(--btn-fg);
+          background-color: var(--btn-bg);
+          border: 0.125rem solid transparent;
+
+          border-radius: 50%;
+          box-shadow: 0.15em -0.15em 0.25em rgba(128, 128, 128, 0.25);
+          text-decoration: none;
+          outline: 0 solid;
+          transition: all 0.3s ease-out;
+        }
+      
+        [class^="actions_btn"]:hover,
+        [class^="actions_btn"]:focus {
+          color: var(--btn-fg-hover);
+          background-color: var(--btn-bg-hover);
+          border-color: var(--btn-fg-hover);
+          transform: scale(1.2);
+          box-shadow: 0.35em -0.35em 0.5em rgba(128, 128, 128, 0.45);
+        }
+      
+        [class^="actions_svg"] {
+          width: 1.75rem;
+          height: 1.75rem;
+          fill: currentColor;
+          stroke: currentColor;
+          border-radius: 100%;
+          overflow: hidden;
+          pointer-events: none;
+          transition: transform 0.5s ease-out;
+        }
+      
+        /* Button click animation */
+      
+        [class^="actions_btn"].-js-clicked {
+          animation: actions_btn-clicked 0.3s ease-out forwards;
+        }
+      
+        @keyframes actions_btn-clicked {
+          0% {
+            transform: scale(1.2);
+          }
+      
+          50% {
+            transform: scale(0.8);
+          }
+      
+          100% {
+            transform: scale(1.2);
+          }
+        }
+      
+        /* Remove all buttons from printouts */
+      
+        @media print {
+          [class^="actions_container"] {
+            display: none !important;
+          }
+        }
+      </style>
 
     <!--    Scripts    -->
+    <script src="./js/mode.js"></script>
     <script src="./js/particles.js"></script>
     <script src="./js/app.js"></script>
 </body>

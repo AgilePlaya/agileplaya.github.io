@@ -113,58 +113,26 @@ canvas{
 
 body {
   --color: hsl(269, 19%, 30%);
-
   --backColor: #dedede;
-
-  --wrapperBackColor: rgba(225, 225, 225, 0.15);
-  --wrapperBackHover: rgba(230, 230, 230, 0.75);
-  --wrapperBorder: #69696942;
-  --centreText: rgb(100, 100, 100);
-
-  --linkColor: #570f9b;
-  --linkColorHover: #4d0491;
-  --linkShadow: #a0a0a0;
-  
-  --iconBlockBG: rgba(255, 255, 255, 0.05);
-  --iconBlockBGHover: rgba(255, 255, 255, 0.45);
-  --iconBlockTextShadow: #69696942;
-  --logoBG: rgba(0, 0, 0, 0);
-
-  --lightShadow: rgb(255, 255, 255);
-  --darkShadow: rgb(175, 175, 175);
-
-  --macOSText: black;
+  --bgColor: hsla(32,100%,85%,.35);
+  --linkColor: #551A8B;
+  --linkColorHover: #42077a;
   /* --linkBgHover: hsla(214, 100%, 85%, 1); */
   /* --linkFocus: hsla(214, 71%, 80%, 0.3); */
   /* --focusOutline: var(--linkFocus) solid 0.25rem; */
-  /* --imgFilter: none; */
+  --imgFilter: none;
 }
 
 @media (prefers-color-scheme: dark) {
   body:not([data-lightMode="light"]) {
     --color: #fafafa;
-
     --backColor: #252525;
-
-    --wrapperBackColor: rgba(25, 25, 25, 0.15);
-    --wrapperBackHover: rgba(25, 25, 25, 0.45);
-    --wrapperBorder: #42424269;
-    --centreText: rgb(155, 155, 155);
-    
+    --bgColor: hsl(269, 19%, 5%);
     --linkColor: #be84f5;
     --linkColorHover: #be84f5;
-    --linkShadow: #696969;
-
-    --iconBlockBG: rgba(55, 55, 55, 0.05);
-    --iconBlockBGHover: rgba(45, 45, 45, 0.45);
-    --iconBlockTextShadow: #42424269;
-    --logoBG: rgba(0, 0, 0, 0);
-
-    --lightShadow: rgb(80, 80, 80);
-    --darkShadow: rgb(0, 0, 0);
-
-    --macOSText: white;
-    /* --imgFilter: grayscale(15%) brightness(85%); */
+    /* --linkFocus: hsla(214, 100%, 80%, .5); */
+    /* --focusOutline: hsla(214, 100%, 85%, .6) solid .25rem; */
+    --imgFilter: grayscale(15%) brightness(85%);
   }
 }
 
@@ -172,30 +140,14 @@ body {
 
 body[data-lightMode="dark"] {
   --color: #464646;
-
-  --backColor: #252525;
-
-  --wrapperBackColor: rgba(25, 25, 25, 0.15);
-  --wrapperBackHover: rgba(25, 25, 25, 0.45);
-  --wrapperBorder: #424242;
-  --centreText: rgb(155, 155, 155);
-
+  --bgColor: hsl(269, 19%, 5%);
   --linkColor: #be84f5;
   --linkColorHover: #be84f5;
-  --linkShadow: #696969;
-
-  --iconBlockBG: rgba(55, 55, 55, 0.05);
-  --iconBlockBGHover: rgba(45, 45, 45, 0.45);
-  --iconBlockTextShadow: #42424269;
-  --logoBG: rgba(0, 0, 0, 0);
-
-  --lightShadow: rgb(80, 80, 80);
-  --darkShadow: rgb(0, 0, 0);
-
-  --macOSText: white;
-  /* --imgFilter: grayscale(15%) brightness(85%); */
+  /* --linkFocus: hsla(214, 100%, 80%, .6); */
+  /* --focusOutline: hsla(214, 100%, 85%, .6) solid .25rem; */
+  --imgFilter: grayscale(15%) brightness(85%);
 }
-/* 
+
 body {
   color: var(--color);
   background-color: var(--bgColor);
@@ -216,7 +168,7 @@ a:visited {
   color: var(--linkColor);
   text-decoration-color: var(--linkColorUnderline);
   outline: hsla(214, 71%, 80%, 0) solid .25rem;
-  transition: color .5s ease-out, background-color .5s ease-out, outline-color .5s ease-out;
+  transition: color .3s ease-out, background-color .3s ease-out, outline-color .3s ease-out;
 }
 
 a:hover,
@@ -224,7 +176,7 @@ a:focus {
   color: var(--linkColorHover);
   outline: var(--linkBgHover) solid .25rem;
   background-color: var(--linkBgHover);
-} */
+}
 
 button::-moz-focus-inner {
   border: 0;
@@ -233,8 +185,8 @@ button::-moz-focus-inner {
 .actions_btn-mode {
   position: fixed;
   z-index: 50;
-  top: 1rem;
-  right: 1rem;
+  top: .5rem;
+  right: .5rem;
   width: 3rem;
   height: 3rem;
   border: 0;
@@ -245,7 +197,7 @@ button::-moz-focus-inner {
 
 /* Switch icon between dark & light */
 .actions_svg-mode > * {
-  transition: opacity .5s ease-out;
+  transition: opacity .3s ease-out;
 }
 
 [data-lightMode="light"] .mode-dark,
@@ -393,9 +345,135 @@ nav ul a, nav .brand-logo {
 } */
 
 
+/* =====================================================================================
+                              Default / Light Mode
+======================================================================================*/
+
+
+/*    Particles Background Style     */
+
+/* #particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #dedede;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+} */
+
+/*    Page Styling     */
+
+/* .wrapper {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: max-content;
+  transform: translate(-50%, -50%);
+  padding: 5%;
+
+  align-items: center;
+  align-content: center;
+  text-align: center;
+
+  -moz-transition: background-color 0.4s ease-in-out;
+  -webkit-transition: background-color 0.4s ease-in-out;
+  -ms-transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
+  backdrop-filter: blur(0.25rem);
+  
+  background-color: rgba(225, 225, 225, 0.15);
+  border-width: 1px;
+  border-style: solid;
+  border-color: #696969;
+  border-radius: 0.5rem;
+  z-index: 10;
+}
+
+.wrapper:hover {
+  background-color: rgba(225, 225, 225, 0.65);
+}
+*/
+
+/* .centre-text {
+  display:block;
+  position: relative;
+  color: rgb(100, 100, 100);
+} */
+
+/* a.text-glow {
+  -moz-transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+  -webkit-transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+  -ms-transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+  border-bottom: dotted 1px;
+  border-bottom-color: #551A8B;
+  text-decoration: none;
+  color: #551A8B;
+  text-shadow: 1px 1px 2px #a0a0a0;
+} */
+
+/* .icon-block {
+  display: block;
+  float: left;
+  padding: 1rem 0rem 0rem 0rem;
+  margin: 5rem 0rem 0rem 5rem;        Commented content
+  border-radius: 1rem;
+
+  font-size: 1.5rem;
+
+  text-shadow: 2px 2px 4px #69696942;
+  
+  background-color: rgba(255, 255, 255, 0.05);
+  
+  backdrop-filter: blur(2rem);
+  
+  box-shadow: -0.5rem 0.5rem 1rem rgb(175, 175, 175), 0.5rem -0.5rem 1rem white;
+
+  -moz-transition: background-color 0.4s ease-in-out, backdrop-filter 0.2s ease-in-out;
+  -webkit-transition: background-color 0.4s ease-in-out, backdrop-filter 0.2s ease-in-out;
+  -ms-transition: background-color 0.4s ease-in-out, backdrop-filter 0.2s ease-in-out;
+  transition: background-color 0.4s ease-in-out, backdrop-filter 0.2s ease-in-out;
+}
+
+.icon-block:hover {
+  background-color: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(10rem);
+} */
+
+/* @media screen and (orientation: landscape) {
+  .left {
+    position: relative;
+    left: 15%;
+    transform: translateX(-25%);
+    box-shadow: -0.5rem 0.5rem 1rem rgb(175, 175, 175), 0.5rem -0.5rem 1rem white;
+  }
+
+  .centre {
+    position: relative;
+    left: 20%;
+    transform: translateX(0%);
+    box-shadow: 0rem 0.5rem 1rem rgb(175, 175, 175), 0rem -0.5rem 1rem white;
+  }
+
+  .right {
+    position: relative;
+    left: 35%;
+    transform: translateX(-25%);
+    box-shadow: 0.5rem 0.5rem 1rem rgb(175, 175, 175), -0.5rem -0.5rem 1rem white;
+  }
+} */
+
+/* .macos {
+  color: black !important;
+} */
+
+
 
 /* =====================================================================================
-                          Switchable Light Mode - Dark Mode
+                                    Dark Mode
 ======================================================================================*/
 
 
@@ -411,10 +489,7 @@ nav ul a, nav .brand-logo {
   background-position: 50% 50%;
   background-repeat: no-repeat;
 
-  -moz-transition: background-color 0.5s ease-in-out;
-  -webkit-transition: background-color 0.5s ease-in-out;
-  -ms-transition: background-color 0.5s ease-in-out;
-  transition: background-color 0.5s ease-in-out;
+  
 }
 
 /*    Page Styling     */
@@ -433,53 +508,40 @@ nav ul a, nav .brand-logo {
   align-content: center;
   text-align: center;
 
-  -moz-transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out;
-  -webkit-transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out;
-  -ms-transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out;
-  transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out;
-
+  -moz-transition: background-color 0.4s ease-in-out;
+  -webkit-transition: background-color 0.4s ease-in-out;
+  -ms-transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
   backdrop-filter: blur(0.25rem);
   
-  background-color: var(--wrapperBackColor);
-  border-width: 2px;
+  background-color: rgba(25, 25, 25, 0.15);
+  border-width: 1px;
   border-style: solid;
-  border-color: var(--wrapperBorder);
+  border-color: #424242;
   border-radius: 2rem;
   z-index: 10;
 }
 
 .wrapper:hover {
-  background-color: var(--wrapperBackHover);
+  background-color: rgba(25, 25, 25, 0.45);
 }
 
 .centre-text {
   display:block;
   position: relative;
-  color: var(--centreText);
-  
-  -moz-transition: color 0.5s ease-in-out;
-  -webkit-transition: color 0.5s ease-in-out;
-  -ms-transition: color 0.5s ease-in-out;
-  transition: color 0.5s ease-in-out;
+  color: rgb(150, 150, 150);
 }
 
 a.text-glow {
-  -moz-transition: color 0.5s ease-in-out, border-color 0.5s ease-in-out;
-  -webkit-transition: color 0.5s ease-in-out, border-color 0.5s ease-in-out;
-  -ms-transition: color 0.5s ease-in-out, border-color 0.5s ease-in-out;
-  transition: color 0.5s ease-in-out, border-color 0.5s ease-in-out;
-
+  -moz-transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+  -webkit-transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+  -ms-transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out;
   border-bottom: dotted 1px;
-  border-bottom-color: var(--linkColor);
+  border-bottom-color: #be84f5;
   text-decoration: none;
-  color: var(--linkColor);
-  text-shadow: 1px 1px 2px var(--linkShadow);
-}
-
-a:hover {
-  border-bottom-color: transparent;
-  text-decoration: none;
-  color: var(--linkColorHover);
+  color: #be84f5;
+  text-shadow: 1px 1px 2px #696969;
 }
 
 .cards-box {
@@ -498,6 +560,11 @@ p {font-family: 'Quicksand', sans-serif; font-style: sans-serif; font-size: 1.5r
   text-shadow: 2px 2px 4px #69696942;
 }
 
+a:hover {
+  border-bottom-color: transparent;
+  text-decoration: none;
+}
+
 .icon-block {
   display: block;
   float: left;
@@ -507,23 +574,23 @@ p {font-family: 'Quicksand', sans-serif; font-style: sans-serif; font-size: 1.5r
 
   font-size: 1.5rem;
 
-  text-shadow: 2px 2px 4px var(--iconBlockTextShadow);
+  text-shadow: 2px 2px 4px #42424269;
   
-  background-color: var(--iconBlockBG);
+  background-color: rgba(55, 55, 55, 0.05);
   
   backdrop-filter: blur(2rem);
   
-  box-shadow: -0.5rem 0.5rem 1rem var(--darkShadow), 0.5rem -0.5rem 1rem var(--lightShadow);
+  box-shadow: -0.5rem 0.5rem 1rem rgb(0, 0, 0), 0.5rem -0.5rem 1rem rgb(80, 80, 80);
 
-  -moz-transition: background-color 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
-  -webkit-transition: background-color 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
-  -ms-transition: background-color 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
-  transition: background-color 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+  -moz-transition: background-color 0.4s ease-in-out, backdrop-filter 0.2s ease-in-out;
+  -webkit-transition: background-color 0.4s ease-in-out, backdrop-filter 0.2s ease-in-out;
+  -ms-transition: background-color 0.4s ease-in-out, backdrop-filter 0.2s ease-in-out;
+  transition: background-color 0.4s ease-in-out, backdrop-filter 0.2s ease-in-out;
 }
 
 .icon-block:hover {
-  background-color: var(--iconBlockBGHover);
-  backdrop-filter: blur(5rem);
+  background-color: rgba(45, 45, 45, 0.45);
+  backdrop-filter: blur(10rem);
 }
 
 .icon-block-text {
@@ -563,12 +630,12 @@ p {font-family: 'Quicksand', sans-serif; font-style: sans-serif; font-size: 1.5r
   /* padding: 2rem 5rem 5.5rem 5rem;    For portrait view*/
   border-radius: 1rem;
   backdrop-filter: blur(0.1rem);
-  background-color: var(--logoBG);
+  background-color: rgba(0, 0, 0, 0);
 
-  -moz-transition: backdrop-filter 0.5s ease-in-out;
-  -webkit-transition: backdrop-filter 0.5s ease-in-out;
-  -ms-transition: backdrop-filter 0.5s ease-in-out;
-  transition: backdrop-filter 0.5s ease-in-out;
+  -moz-transition: backdrop-filter 0.2s ease-in-out;
+  -webkit-transition: backdrop-filter 0.2s ease-in-out;
+  -ms-transition: backdrop-filter 0.2s ease-in-out;
+  transition: backdrop-filter 0.2s ease-in-out;
 }
 
 .logo:hover {
@@ -588,46 +655,26 @@ p {font-family: 'Quicksand', sans-serif; font-style: sans-serif; font-size: 1.5r
     position: relative;
     left: 15%;
     transform: translateX(-25%);
-    box-shadow: -0.5rem 0.5rem 1rem var(--darkShadow), 0.5rem -0.5rem 1rem var(--lightShadow);
-
-    -moz-transition: background-color 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out, text-shadow 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-    -webkit-transition: background-color 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out, text-shadow 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-    -ms-transition: background-color 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out, text-shadow 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-    transition: background-color 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out, text-shadow 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    box-shadow: -0.5rem 0.5rem 1rem rgb(0, 0, 0), 0.5rem -0.5rem 1rem rgb(80, 80, 80);
   }
 
   .centre {
     position: relative;
     left: 20%;
     transform: translateX(0%);
-    box-shadow: 0rem 0.5rem 1rem var(--darkShadow), 0rem -0.5rem 1rem var(--lightShadow);
-
-    -moz-transition: background-color 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out, text-shadow 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-    -webkit-transition: background-color 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out, text-shadow 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-    -ms-transition: background-color 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out, text-shadow 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-    transition: background-color 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out, text-shadow 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    box-shadow: 0rem 0.5rem 1rem rgb(0, 0, 0), 0rem -0.5rem 1rem rgb(80, 80, 80);
   }
 
   .right {
     position: relative;
     left: 35%;
     transform: translateX(-25%);
-    box-shadow: 0.5rem 0.5rem 1rem var(--darkShadow), -0.5rem -0.5rem 1rem var(--lightShadow);
-
-    -moz-transition: background-color 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out, text-shadow 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-    -webkit-transition: background-color 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out, text-shadow 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-    -ms-transition: background-color 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out, text-shadow 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-    transition: background-color 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out, text-shadow 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    box-shadow: 0.5rem 0.5rem 1rem rgb(0, 0, 0), -0.5rem -0.5rem 1rem rgb(80, 80, 80);
   }
 }
 
 .macos {
-  color: var(--macOSText) !important;
-
-  -moz-transition: color 0.5s ease-in-out;
-  -webkit-transition: color 0.5s ease-in-out;
-  -ms-transition: color 0.5s ease-in-out;
-  transition: color 0.5s ease-in-out;
+  color: white !important;
 }
 
 

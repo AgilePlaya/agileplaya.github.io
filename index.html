@@ -12,7 +12,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Quicksand&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body data-lightMode="[light]">
+
+    <!--    Button for light-dark mode switch    -->
+    <svg style = display:none id = svg_definitions>
+        <defs>
+            <symbol viewBox="0 0 960 960" id="icon-mode-dark">
+                <circle cx="476" cy="480" r="458" fill-opacity=".25"/>
+                <path d="M382 33C82 91-118 488 115 767c186 223 492 255 716 9a515 515 0 01-421-243c-94-157-56-368-28-500z"/>
+            </symbol>
+            <symbol viewBox="0 0 960 960" id="icon-mode-light">
+                <circle cx="479.5" cy="480.5" r="242"/>
+                <path d="M480 800c22 0 40 18 40 40v80a40 40 0 01-80 0v-80c0-22 18-40 40-40zm480-320c0 22-18 40-40 40h-80a40 
+                40 0 010-80h80c22 0 40 18 40 40zM706 763l57 56a40 40 0 1056-56l-56-57a40 40 0 10-57 57zm-509 56l57-56a40 40 
+                0 10-57-57l-56 57a40 40 0 1056 56zm-77-379a40 40 0 010 80H40a40 40 0 010-80h80zm21-243l56 57a40 40 0 1057-57l-57-56a40 
+                40 0 10-56 56zm622 57l56-57a40 40 0 10-56-56l-57 56a40 40 0 1057 57zM440 40v80a40 40 0 0080 0V40a40 40 0 00-80 0z"/>
+            </symbol>
+        </defs>
+    </svg>
 
     <!--    Main body of the webpage    -->
     <section class="wrapper">
@@ -20,7 +37,7 @@
             <h1 class="text-shadow-light">Page still under development</h1>
             <p>Maybe you wanted to go <a class="text-glow" href="https://agileplaya.github.io/game-store">Game Store</a>?</p>
             <p>Buttons below under tesing.</p>
-
+            
             <section class="cards-box">
                 <section class="icon-block left">
                     <a href="#">
@@ -75,5 +92,6 @@
     <!--    Scripts    -->
     <script src="./js/particles.js"></script>
     <script src="./js/app.js"></script>
+    <script src="./js/mode.js"></script>
 </body>
 </html>

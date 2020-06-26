@@ -375,6 +375,7 @@ nav ul a, nav .brand-logo {
   width: 100%;
   height: 100%;
   background-color: #252525;
+  /* background-color: #252525; */
   background-image: url('');
   background-size: cover;
   background-position: 50% 50%;
@@ -652,3 +653,104 @@ a:hover {
 }
 
 
+
+/* =====================================================================================
+                              Mode Switching Button
+======================================================================================*/
+
+body {
+  --color: hsl(269, 19%, 30%);
+  --bgColor: hsla(32,100%,85%,.35);
+  --linkColor: #551A8B;
+  --linkColorHover: #42077a;
+  /* --linkBgHover: hsla(214, 100%, 85%, 1); */
+  /* --linkFocus: hsla(214, 71%, 80%, 0.3); */
+  /* --focusOutline: var(--linkFocus) solid 0.25rem; */
+  --imgFilter: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  body:not([data-lightMode="light"]) {
+    --color: #fafafa;
+    --bgColor: hsl(269, 19%, 5%);
+    --linkColor: #be84f5;
+    --linkColorHover: #be84f5;
+    /* --linkFocus: hsla(214, 100%, 80%, .5); */
+    /* --focusOutline: hsla(214, 100%, 85%, .6) solid .25rem; */
+    --imgFilter: grayscale(15%) brightness(85%);
+  }
+}
+
+/* Duplicated dark mode for button action */
+
+body[data-lightMode="dark"] {
+  --color: #fff;
+  --bgColor: hsl(269, 19%, 5%);
+  --linkColor: #be84f5;
+  --linkColorHover: #be84f5;
+  /* --linkFocus: hsla(214, 100%, 80%, .6); */
+  /* --focusOutline: hsla(214, 100%, 85%, .6) solid .25rem; */
+  --imgFilter: grayscale(15%) brightness(85%);
+}
+
+body {
+  color: var(--color);
+  background-color: var(--bgColor);
+  background-image: var(--bgPage);
+  transition: 
+    background-image .3s ease-out,
+    background-color .3s ease-out,
+    color .3s ease-out;
+}
+
+img:not([src*=".svg"]) {
+  filter: var(--imgFilter);
+  transition: filter 0.3s ease-out;
+}
+
+a:link,
+a:visited {
+  color: var(--linkColor);
+  text-decoration-color: var(--linkColorUnderline);
+  outline: hsla(214, 71%, 80%, 0) solid .25rem;
+  transition: color .3s ease-out, background-color .3s ease-out, outline-color .3s ease-out;
+}
+
+a:hover,
+a:focus {
+  color: var(--linkColorHover);
+  outline: var(--linkBgHover) solid .25rem;
+  background-color: var(--linkBgHover);
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+.actions_btn-mode {
+  position: fixed;
+  z-index: 50;
+  top: .5rem;
+  right: .5rem;
+  width: 3rem;
+  height: 3rem;
+  border: 0;
+  background-color: transparent;
+  color: inherit;
+  padding: 0.25rem;
+}
+
+/* Switch icon between dark & light */
+.actions_svg-mode > * {
+  transition: opacity .3s ease-out;
+}
+
+[data-lightMode="light"] .mode-dark,
+[data-lightMode="dark"] .mode-light {
+  opacity: 1;
+}
+
+[data-lightMode="light"] .mode-light,
+[data-lightMode="dark"] .mode-dark {
+  opacity: 0;
+}

@@ -661,18 +661,22 @@ p {font-family: 'Quicksand', sans-serif; font-style: sans-serif; font-size: 1.5r
     
     font-size: 3vw;
   
-    text-shadow: 2px 2px 4px #42424269;
+    text-shadow: 2px 2px 4px var(--iconBlockTextShadow);
     
-    background-color: rgba(55, 55, 55, 0.05);
+    background-color: var(--iconBlockBG);
     
     backdrop-filter: blur(2rem);
     
-    box-shadow: -0.5rem 0.5rem 1rem rgb(0, 0, 0), 0.5rem -0.5rem 1rem rgb(95, 95, 95);
-  
-    -moz-transition: background-color 0.4s ease-in-out, backdrop-filter 0.2s ease-in-out;
-    -webkit-transition: background-color 0.4s ease-in-out, backdrop-filter 0.2s ease-in-out;
-    -ms-transition: background-color 0.4s ease-in-out, backdrop-filter 0.2s ease-in-out;
-    transition: background-color 0.4s ease-in-out, backdrop-filter 0.2s ease-in-out;
+    box-shadow: -0.5rem 0.5rem 1rem var(--darkShadow), 0.5rem -0.5rem 1rem var(--lightShadow);
+
+    -moz-transition: background-color 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out, text-shadow 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    -webkit-transition: background-color 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out, text-shadow 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    -ms-transition: background-color 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out, text-shadow 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out, text-shadow 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  }
+
+  .icon-block:hover {
+    background-color: var(--iconBlockBGHover);
   }
 
   .icon-block-text {

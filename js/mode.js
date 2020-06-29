@@ -1,3 +1,24 @@
+
+// ========================================================================================================
+//                          Prevent scrolling and bouncing effect on safari
+// ========================================================================================================
+
+function preventDefault(e){
+    e.preventDefault();
+}
+
+function disableScroll(){
+    document.body.addEventListener('touchmove', preventDefault, { passive: false });
+}
+
+function enableScroll(){
+    document.body.removeEventListener('touchmove', preventDefault);
+}
+
+// ========================================================================================================
+//                             Dark Mode - Light Mode Implementation
+// ========================================================================================================
+
 var supportsES6 = (function () {
     try {
         new Function("(a=0)=>a");

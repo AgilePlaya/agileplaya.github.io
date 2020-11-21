@@ -451,10 +451,10 @@ nav ul a, nav .brand-logo {
   border-radius: 2rem;
   z-index: 10;
 }
-
+/* 
 .wrapper:hover {
   background-color: var(--wrapperBackHover);
-}
+} */
 
 .centre-text {
   display:block;

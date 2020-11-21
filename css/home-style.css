@@ -451,10 +451,10 @@ nav ul a, nav .brand-logo {
   border-radius: 2rem;
   z-index: 10;
 }
-
+/* 
 .wrapper:hover {
   background-color: var(--wrapperBackHover);
-}
+} */
 
 .centre-text {
   display:block;
@@ -612,15 +612,15 @@ p {font-family: 'Quicksand', sans-serif; font-style: sans-serif; font-size: 1.5r
 }
 
 .footer .left {
-  left: 5rem;
+  left: 3rem;
 }
 
 .footer .centre {
-  left: 48rem;
+  left: 45rem;
 }
 
 .footer .right {
-  left: 87.5rem;
+  left: 80.5rem;
 }
 
 .footer a {

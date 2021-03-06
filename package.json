@@ -1,9 +1,9 @@
 {
   "private": true,
-  "name": "cara",
-  "description": "Playful and Colorful One-Page portfolio featuring Parallax effects and animations",
+  "name": "portfolio",
+  "description": "Profile home page using NodeJS.",
   "version": "0.2.9",
-  "author": "LekoArts <hello@lekoarts.de>",
+  "author": "AgilePlaya",
   "license": "0BSD",
   "starter-name": "gatsby-starter-portfolio-cara",
   "scripts": {

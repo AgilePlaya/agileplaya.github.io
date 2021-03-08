@@ -14,8 +14,6 @@ module.exports = {
     siteTitleAlt: `AgilePlaya's Portfolio Website`,
     // Can be used for e.g. JSONLD
     siteHeadline: `AgilePlaya's Portfolio Website`,
-    // Will be used to generate absolute URLs for og:image etc.
-    siteUrl: `https://agileplaya.github.io`,
     // Used for SEO
     siteDescription: `Profile home page using NodeJS.`,
     // Will be set on the <html /> tag

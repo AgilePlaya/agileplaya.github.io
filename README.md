@@ -176,7 +176,7 @@ Project Link: [https://github.com/AgilePlaya/agileplaya.github.io](https://githu
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/badge/Contibitors-1-orange?style=for-the-badge
+[contributors-shield]: https://img.shields.io/badge/Contributors-1-orange?style=for-the-badge
 [contributors-url]: https://github.com/AgilePlaya/agileplaya.github.io/graphs/contributors
 [forks-shield]: https://img.shields.io/badge/Forks-0-red?style=for-the-badge
 [forks-url]: https://github.com/AgilePlaya/agileplaya.github.io/network/members

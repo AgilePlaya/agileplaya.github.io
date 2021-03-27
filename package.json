@@ -4,7 +4,7 @@
   "description": "Profile home page using NodeJS.",
   "version": "0.2.9",
   "author": "AgilePlaya",
-  "license": "0BSD",
+  "license": "GPL-3.0",
   "starter-name": "gatsby-starter-portfolio-cara",
   "scripts": {
     "build": "gatsby build",

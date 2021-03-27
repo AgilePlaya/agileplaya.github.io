@@ -18,10 +18,11 @@ New style based on https://github.com/othneildrew/Best-README-Template
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-
+[![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
@@ -181,10 +182,10 @@ Project Link: [https://github.com/AgilePlaya/agileplaya.github.io](https://githu
 [forks-url]: https://github.com/AgilePlaya/agileplaya.github.io/network/members
 [stars-shield]: https://img.shields.io/badge/Stars-1-orange?style=for-the-badge
 [stars-url]: https://github.com/AgilePlaya/agileplaya.github.io/stargazers
-[issues-shield]: https://img.shields.io/badge/Issues-1-green?style=for-the-badge
+[issues-shield]: https://img.shields.io/badge/Issues-0-brightgreen?style=for-the-badge
 [issues-url]: https://github.com/AgilePlaya/agileplaya.github.io/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[license-shield]: https://img.shields.io/badge/License-GPL3.0-brightgreen?style=for-the-badge
+[license-url]: https://github.com/AgilePlaya/agileplaya.github.io/blob/main-gatsby-based/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/aritro-mukherjee/
 [product-screenshot]: images/Home-Screen.png

@@ -80,23 +80,15 @@ New style based on https://github.com/othneildrew/Best-README-Template
 
 [![Product Name Screen Shot][product-screenshot]](https://github.com/AgilePlaya/agileplaya.github.io/blob/main-gatsby-based/images/Home-Screen.png)
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+I wanted to build a webpage which would be able to better represent my knowledge and showcase my projects. or this purpose, I built this protfolio website. As for this readme file, it works as a template for my other github projects as well.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+A list of resources that I used and also some other resources that I found really helpful are listed in the acknowledgements.
 
 ### Built With
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
+These are the frameworks that I used to build this project.
+* [Node JS](https://nodejs.org/en/)
+* [GatsbyJS](https://www.gatsbyjs.com/)
 
 
 
@@ -125,6 +117,10 @@ This is an example of how to list things you need to use the software and how to
    npm install
    ```
 3. Modify src files as per your requirement `file.mdx`
+4. Run the following command to start the project locally:
+   ```
+   gatsby develop
+   ```
 
 
 
@@ -179,13 +175,13 @@ Project Link: [https://github.com/AgilePlaya/agileplaya.github.io](https://githu
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/badge/Contibitors-1-orange?style=for-the-badge
 [contributors-url]: https://github.com/AgilePlaya/agileplaya.github.io/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/badge/Forks-0-red?style=for-the-badge
 [forks-url]: https://github.com/AgilePlaya/agileplaya.github.io/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/badge/Stars-1-orange?style=for-the-badge
 [stars-url]: https://github.com/AgilePlaya/agileplaya.github.io/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/badge/Issues-1-green?style=for-the-badge
 [issues-url]: https://github.com/AgilePlaya/agileplaya.github.io/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt

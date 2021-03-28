@@ -156,7 +156,7 @@ Contributions are what make the open source community such an amazing place to b
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@AgilePlaya](https://twitter.com/AgilePlaya) - [Email](60707646+AgilePlaya@users.noreply.github.com)
+Aritro Mukherjee - [@AgilePlaya](https://twitter.com/AgilePlaya) - [aritro-mukherjee](https://www.linkedin.com/in/aritro-mukherjee/)
 
 Project Link: [https://github.com/AgilePlaya/agileplaya.github.io](https://github.com/AgilePlaya/agileplaya.github.io)
 

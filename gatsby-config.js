@@ -20,6 +20,7 @@ module.exports = {
     siteLanguage: `en`,
     // Used for og:image and must be placed inside the `static` folder
     siteImage: `/banner.jpg`,
+    siteUrl: `https://agileplaya.github.io/`,
     // Twitter Handle
     author: `AgilePlaya`,
   },
